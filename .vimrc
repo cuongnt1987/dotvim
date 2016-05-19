@@ -28,3 +28,6 @@ let g:syntastic_check_on_wq = 0
 
 " CtrlP configure
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Color schema
+colorscheme torte
