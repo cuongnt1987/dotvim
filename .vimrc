@@ -54,9 +54,18 @@ let g:syntastic_javascript_eslint_exec = 'eslint_d'
 " ====================================================
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = ''
+" ====================================================
+" Javascript Libraries Syntax
+" Supported Languages
+" jquery, underscore, backbone, prelude, angularjs,
+" angularui, angularuirouter, react, flux, requirejs,
+" sugar, jasmine, chai, handlebars, ramda
+" ====================================================
+let g:used_javascript_libs = 'jquery,angularjs,angularui,angularuirouter'
 
 " Color schema
 colorscheme solarized
+
 " ====================================================
 " Keymap configuration
 " ====================================================
