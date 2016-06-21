@@ -1,22 +1,15 @@
 " ===============================================
-" deoplete - 'dark powerd neo-completion'
+" Syntastic 
 " ===============================================
-" Automaticallly start deoplete when Neovim start
-let g:deoplete#enable_at_startup = 1
+" status line
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-" ===============================================
-" dooplete-ternjs
-" ===============================================
-let g:tern_request_timeout = 1
-
-" This do disable full signature type on autocomplete
-let g:tern_show_signature_in_pum = 0  
-
-" Use tern_for_vim - use same tern command with 
-" deoplete-ternjs
-let g:tern#command = ["tern"]
-let g:tern#arguments = ["--persistent"]
-
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 " ===============================================
 " tern-for-vim
 " ===============================================

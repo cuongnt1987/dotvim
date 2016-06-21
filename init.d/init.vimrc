@@ -8,14 +8,9 @@
 "  'for': on-demand loading: File type
 "  'frozon': do not update unless explicitly specified
 "
-function! DoRemote(arg)
-	UpdateRemotePlugins
-endfunction
-
 call plug#begin()
+Plug 'scrooloose/syntastic'
 Plug 'neomake/neomake'
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript'] }
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind']}
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': ['NERDTreeToggle', 'NERDTreeFind']}
